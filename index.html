@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>공동구매 플랫폼 - 함께하면 싸다! 💰</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+
+  <!-- ✅ GA4 Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HY1Q5MSWPM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HY1Q5MSWPM');
+  </script>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f8f8;
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    section {
+      padding: 6rem 0;
+    }
+
+    .fade-in {
+      animation: fadeIn 1s ease-in-out forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .highlight {
+      color: #e44d26;
+    }
+
+    .hover-scale:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .btn-primary {
+      background-color: #e44d26;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.375rem;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .btn-primary:hover {
+      background-color: #c63e1f;
+    }
+
+    @keyframes slideInLeft {
+      from {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideInRight {
+      from {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    .slide-in-left {
+      animation: slideInLeft 0.8s ease-out;
+    }
+
+    .slide-in-right {
+      animation: slideInRight 0.8s ease-out;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+
+  <!-- ✅ 네비게이션 -->
+  <header class="bg-white shadow-md py-4">
+    <div class="container mx-auto px-4 flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold text-gray-800 hover:text-e44d26">함께사YO!</a>
+      <nav>
+        <a href="#features" class="text-gray-600 hover:text-e44d26 px-3">주요 기능</a>
+        <a href="#pricing" class="text-gray-600 hover:text-e44d26 px-3">가격 정책</a>
+        <a href="#reviews" class="text-gray-600 hover:text-e44d26 px-3">후기</a>
+        <a href="#contact" class="text-gray-600 hover:text-e44d26 px-3">학교추천하기</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ✅ Hero 섹션 -->
+  <section id="hero" class="bg-gradient-to-r from-orange-100 to-yellow-50 py-24">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-6 slide-in-left">대학생 필수 앱, <span class="highlight">함께사YO!</span></h1>
+      <p class="text-lg text-gray-700 mb-8 slide-in-right">기숙사/자취생을 위한 생필품 공동구매 플랫폼. 친구들과 함께 저렴하게 구매하세요!</p>
+      <a href="#contact" class="btn-primary hover-scale inline-block">지금 바로 시작하기!</a>
+    </div>
+  </section>
+
+  <!-- ✅ 기능 섹션 -->
+  <section id="features" class="py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-semibold text-center text-gray-800 mb-12 fade-in">주요 기능 ✨</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-lg shadow-md p-6 hover-scale fade-in">
+          <h3 class="text-xl font-semibold text-gray-700 mb-4">최저가 공동구매</h3>
+          <p class="text-gray-600">친구들과 함께 구매하면 더욱 저렴하게! 매일 업데이트되는 핫딜 상품을 놓치지 마세요.</p>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6 hover-scale fade-in">
+          <h3 class="text-xl font-semibold text-gray-700 mb-4">간편한 결제 시스템</h3>
+          <p class="text-gray-600">다양한 결제 수단 지원! 복잡한 과정 없이 빠르고 안전하게 결제하세요.</p>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6 hover-scale fade-in">
+          <h3 class="text-xl font-semibold text-gray-700 mb-4">맞춤형 상품 추천</h3>
+          <p class="text-gray-600">나의 소비 패턴에 맞는 상품을 추천! 필요한 물품을 쉽고 빠르게 찾아보세요.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ 가격 섹션 -->
+  <section id="pricing" class="bg-gray-50 py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-semibold text-center text-gray-800 mb-12 fade-in">가격 정책 💸</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-lg shadow-md p-6 hover-scale fade-in">
+          <h3 class="text-xl font-semibold text-gray-700 mb-4">베이직</h3>
+          <p class="text-gray-600">무료체험 12개월</p>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6 hover-scale fade-in">
+          <h3 class="text-xl font-semibold text-gray-700 mb-4">프리미엄</h3>
+          <p class="text-gray-600">월 6,900원: 모든 공동구매 참여, 무제한 할인쿠폰 제공, 전용 고객센터</p>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6 hover-scale fade-in">
+            <h3 class="text-xl font-semibold text-gray-700 mb-4">학생전용</h3>
+            <p class="text-gray-600">학교인증하면 월 2900원에 프리미엄!</p>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ 후기 섹션 -->
+  <section id="reviews" class="py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-semibold text-center text-gray-800 mb-12 fade-in">서비스 후기 💬</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white rounded-lg shadow-md p-6 hover-scale fade-in">
+          <p class="text-gray-700 mb-4">"함께사YO! 덕분에 생활비를 많이 아낄 수 있었어요. 친구들과 함께 필요한 물품을 저렴하게 구매할 수 있어서 너무 좋아요!"</p>
+          <p class="text-gray-600">- 고X대학교 김OO</p>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6 hover-scale fade-in">
+          <p class="text-gray-700 mb-4">"자취 생활 필수 앱! 배송도 빠르고, 상품 종류도 다양해서 좋아요. 강력 추천합니다!"</p>
+          <p class="text-gray-600">- 인X대학교 박OO</p>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6 hover-scale fade-in">
+            <p class="text-gray-700 mb-4">"원하는 물품을 공동 구매해서 3달에 10만원 정도 아꼈어요! "</p>
+            <p class="text-gray-600">- 부x대학교 조OO</p>
+          </div>
+          <div class="bg-white rounded-lg shadow-md p-6 hover-scale fade-in">
+            <p class="text-gray-700 mb-4">"이젠 친구랑 같이 살 필요 없이, 함께사YO!로 마음만 함께해도 돼요ㅋㅋ 진심 꿀앱! "</p>
+            <p class="text-gray-600">- 삼x대학교 조OO</p>
+          </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ 학교추천 섹션 -->
+  <section id="contact" class="bg-gray-100 py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-semibold text-center text-gray-800 mb-12 fade-in">학교 사용 추천하기 📞</h2>
+      <form class="max-w-lg mx-auto" id="contactForm">
+        <div class="mb-4">
+          <label for="name" class="block text-gray-700 text-sm font-bold mb-2">학교이름</label>
+          <input type="text" id="name" required class="shadow border rounded w-full py-2 px-3 text-gray-700" />
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block text-gray-700 text-sm font-bold mb-2">이메일</label>
+          <input type="email" id="email" required class="shadow border rounded w-full py-2 px-3 text-gray-700" />
+        </div>
+        <div class="flex justify-center">
+          <button class="btn-primary hover-scale" type="submit">학교추천하기</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ✅ Footer -->
+  <footer class="bg-gray-800 py-4 text-center">
+    <p class="text-white">© 2024 함께사YO! All rights reserved.</p>
+  </footer>
+
+  <!-- ✅ Firebase + Firestore -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore-compat.js"></script>
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyALPhp2NYUe228yP7SJK9AciF_mLODEKCM",
+      authDomain: "choyounghyun-9c63c.firebaseapp.com",
+      projectId: "choyounghyun-9c63c",
+      storageBucket: "choyounghyun-9c63c.appspot.com",
+      messagingSenderId: "505583572627",
+      appId: "1:505583572627:web:33bdd8815dd1011fae9f66",
+      measurementId: "G-HY1Q5MSWPM"
+    };
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+  </script>
+
+  <!-- ✅ Form 데이터 저장 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const form = document.getElementById("contactForm");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+
+        db.collection("recommendations").add({
+          name: name,
+          email: email,
+          timestamp: firebase.firestore.FieldValue.serverTimestamp()
+        })
+        .then(() => {
+          alert("✅ 추천이 성공적으로 접수되었습니다!");
+          form.reset();
+        })
+        .catch((error) => {
+          alert("❌ 오류 발생: " + error.message);
+        });
+      });
+    });
+  </script>
+
+  <!-- ✅ Fade-in 스크립트 -->
+  <script>
+    const fadeInElements = document.querySelectorAll('.fade-in');
+
+    const fadeInOnScroll = () => {
+      fadeInElements.forEach((element) => {
+        const elementTop = element.getBoundingClientRect().top;
+        const elementBottom = element.getBoundingClientRect().bottom;
+
+        const isVisible = (elementTop <= window.innerHeight) && (elementBottom >= 0);
+
+        if (isVisible) {
+          element.classList.add('animate-fadeIn');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', fadeInOnScroll);
+    window.addEventListener('load', fadeInOnScroll);
+  </script>
+</body>
+</html>
